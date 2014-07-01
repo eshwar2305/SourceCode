@@ -1,4 +1,7 @@
-package SingleLinkedList;
+package SinglyLinkedList;
+
+
+
 
 
 public class SinglyLinkedListMain {

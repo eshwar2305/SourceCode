@@ -4,7 +4,7 @@ FOLLOW UP
 How would you solve this problem if a temporary buffer is not allowed?
  */
 
-import SingleLinkedList.*;
+import SinglyLinkedList.*;
 
 public class RemoveDuplicateSinglyLinkedList {
 
@@ -13,7 +13,7 @@ public class RemoveDuplicateSinglyLinkedList {
 		if(sl.header == null){
 			return;
 		}
-		Node prev = sl.header;
+		/*Node prev = sl.header;
 		Node cur = prev.next;
 		
 		while(cur != null){// Check for earlier dups
@@ -30,8 +30,28 @@ public class RemoveDuplicateSinglyLinkedList {
 				prev = cur;
 				cur = prev.next;
 			}
-		}
+		}*/
 		
+		Node cur,prev,runner;
+		cur = sl.header;
+		
+		while(cur != null){
+			prev = cur;
+			runner = cur.next;
+			while(runner != null){
+				if(cur.value == runner.value){
+					if(runner.next != null){
+						prev.next = runner.next;
+					}else{
+						prev.next = null;
+					}	
+				}else{
+					prev = prev.next;
+				}	
+				runner = runner.next;
+			}
+			cur = cur.next;
+		}
 		
 	}
 
