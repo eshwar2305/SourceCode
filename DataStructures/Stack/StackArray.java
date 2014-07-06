@@ -1,10 +1,11 @@
+package Stack;
 
 public class StackArray {
 	int[] array;
 	int top;
 	final int STACK_SIZE = 100;
 	
-	StackArray(){
+	public StackArray(){
 		array = new int[STACK_SIZE];
 		top = -1;
 	}
@@ -25,6 +26,15 @@ public class StackArray {
 			return array[top--];
 		}
 	}
+	
+	public int peek(){
+		if(top == -1){
+			System.out.println("Stack Empty");
+			return top;
+		}else{
+			return array[top];
+		}
+	}
 
 	public boolean isEmpty(){
 		if(top == -1) return true;
@@ -39,6 +49,10 @@ public class StackArray {
 		for(int i=top;i>=0;i--){
 			System.out.println(array[i]);
 		}
+	}
+	
+	public int size(){
+		return top;
 	}
 	
 	public void sort() {

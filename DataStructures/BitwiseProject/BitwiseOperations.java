@@ -1,3 +1,5 @@
+package BitwiseProject;
+
 
 public class BitwiseOperations {
 

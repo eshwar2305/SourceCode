@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 
 /*************************************************************************
  *  Compilation:  javac Knapsack.java

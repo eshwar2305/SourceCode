@@ -1,3 +1,5 @@
+package LinkedLists;
+
 /*
  * 2.3 Implement an algorithm to delete a node in the middle of a single linked list, 
  * given only access to that node.
@@ -14,7 +16,7 @@ Result: nothing is returned, but the new linked list looks like a->b->d->e
 	issue you should discuss with your interviewer.
  */
 
-import SinglyLinkedList.LinkedList;
+import SinglyLinkedList.*;
 
 
 public class DeleteNodeInMiddleSinglyLinkedList {

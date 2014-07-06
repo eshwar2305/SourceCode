@@ -1,3 +1,4 @@
+package LinkedLists;
 /*
  * 2.1 Write code to remove duplicates from an unsorted linked list.
 FOLLOW UP

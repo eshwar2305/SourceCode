@@ -1,3 +1,5 @@
+package DFS;
+
 // dfs.java
 // demonstrates depth-first search
 // to run this program: C>java DFSApp

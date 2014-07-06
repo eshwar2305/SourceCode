@@ -1,3 +1,4 @@
+package ArraysnStrings;
 
 /*
  * 1.7 Write an algorithm such that if an element 
